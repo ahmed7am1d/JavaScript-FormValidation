@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css"/>
+    <!-- Font Awesome -->
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/65be32e476.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form action="" class="form" id="form">
+            <div class="form-control">
+                <label for="">Username:</label>
+                <input type="text" placeholder="ahmed12d" id="username">
+                <!-- Vaild/Wrong Icons -->
+                <i class="fas fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <!-- small tag used to show the error message to the user -->
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Email:</label>
+                <input type="email" placeholder="me@example.com" id="email">
+                <!-- Vaild/Wrong Icons -->
+                <i class="fas fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <!-- small tag used to show the error message to the user -->
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Password:</label>
+                <input type="password" placeholder="Password" id="password">
+                <!-- Vaild/Wrong Icons -->
+                <i class="fas fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <!-- small tag used to show the error message to the user -->
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Password Check:</label>
+                <input type="password" placeholder="Password two" id="password2">
+                <!-- Vaild/Wrong Icons -->
+                <i class="fas fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <!-- small tag used to show the error message to the user -->
+                <small>Error Message</small>
+            </div>
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

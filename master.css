@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satisfy&family=Staatliches&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-background-color:#0D1117;
+    --main-them-color:#8F7B24;
+    --main-font-color:white;
+}
+
+body {
+    background-color: var(--main-background-color);
+    /* Center the whole content of the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container {
+    background-color: var(--main-them-color);
+    border-radius: 5px;
+    color:var(--main-font-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    max-width: 100%;
+    width: 400px;
+    /* to fix the border raidus of header from above and right and left */
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding:20px 40px;
+    color:var(--main-background-color);
+    
+}
+
+.header h2 {
+    margin:0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding:10px;
+    font-size: 15px;
+    font-family: inherit;
+}
+/* The Success class will be added to html code from the javascript  */
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    position: absolute;
+    top:32px;
+    right:10px;
+    color:var(--main-background-color);
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color:#2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color:#e74c3c;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small {
+    visibility: visible;
+    color:#e74c3c;
+}
+
+.form button {
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    padding: 10px;
+    border:2px solid var(--main-background-color);
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;
+}
